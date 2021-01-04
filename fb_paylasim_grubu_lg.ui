@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>826</width>
+    <height>488</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QPushButton" name="fb_gl">
+   <property name="geometry">
+    <rect>
+     <x>510</x>
+     <y>460</y>
+     <width>161</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>FB Paylaşım Grubunu Güncelle</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>20</y>
+     <width>131</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>FB Paylaşım Grubu Adı :</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>80</y>
+     <width>191</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>FB Paylaşım Grubuna Eklenecek Gruplar:</string>
+   </property>
+  </widget>
+  <widget class="QTableWidget" name="grup_tablosu">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>100</y>
+     <width>650</width>
+     <height>351</height>
+    </rect>
+   </property>
+   <column>
+    <property name="text">
+     <string>Seç</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Facebook Grup Adı</string>
+    </property>
+   </column>
+  </widget>
+  <widget class="QComboBox" name="fb_pg_list">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>40</y>
+     <width>651</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>fb_gl</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>ck_kontrol()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>590</x>
+     <y>471</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>412</x>
+     <y>243</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>kontrol()</slot>
+  <slot>ck_kontrol()</slot>
+ </slots>
+</ui>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="PYTHON_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$" />
+    <orderEntry type="jdk" jdkName="Python 3.6" jdkType="Python SDK" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module" module-name="i_seviye" />
+    <orderEntry type="module" module-name="162132064 _SinanURUN_Kelebek" />
+    <orderEntry type="module" module-name="hesap_makinesi_projesi" />
+  </component>
+</module>

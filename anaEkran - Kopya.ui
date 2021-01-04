@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>taslakiletiler</class>
+ <widget class="QMainWindow" name="taslakiletiler">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Taslak İleti Ekranı</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTableWidget" name="tableWidget">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>140</y>
+      <width>721</width>
+      <height>192</height>
+     </rect>
+    </property>
+    <column>
+     <property name="text">
+      <string>İleti Adı</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Paylaşım Grupları</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Gruplar</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Kayıt Tarihi</string>
+     </property>
+    </column>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>65</y>
+      <width>371</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>20</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Taslak İletiler</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuiletiler">
+    <property name="title">
+     <string>iletiler</string>
+    </property>
+    <addaction name="actionYeni_iletiler"/>
+    <addaction name="actionTaslak_iletiler"/>
+    <addaction name="actionPayla_lan_iletiler"/>
+   </widget>
+   <widget class="QMenu" name="menuGruplar">
+    <property name="title">
+     <string>Gruplar</string>
+    </property>
+    <addaction name="actionPayla_m_Gruplar"/>
+   </widget>
+   <addaction name="menuiletiler"/>
+   <addaction name="menuGruplar"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionYeni_iletiler">
+   <property name="text">
+    <string>Yeni iletiler</string>
+   </property>
+  </action>
+  <action name="actionTaslak_iletiler">
+   <property name="text">
+    <string>Taslak iletiler</string>
+   </property>
+  </action>
+  <action name="actionPayla_lan_iletiler">
+   <property name="text">
+    <string>Paylaşılan iletiler</string>
+   </property>
+  </action>
+  <action name="actionPayla_m_Gruplar">
+   <property name="text">
+    <string>Paylaşım Grupları</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

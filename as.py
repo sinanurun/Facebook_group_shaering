@@ -1,0 +1,26 @@
+from selenium import webdriver
+from selenium.webdriver.common.keys import Keys
+import time
+driver = webdriver.Firefox()
+driver.get("http://facebook.com")
+# //*[@id="u_0_2"]
+time.sleep(5)
+giris_yap = driver.find_element_by_xpath('//*[@id="loginbutton"]')
+ad = driver.find_element_by_xpath('//*[@id="email"]')
+ad.send_keys('email')
+# giris_yap.click()
+sifre = driver.find_element_by_xpath('//*[@id="pass"]')
+sifre.send_keys('şifre')
+giris_yap.click()
+time.sleep(5)
+gruplar = driver.find_element_by_xpath("//textarea[contains(@title,'Ne düşünüyorsun, kanka?')]")
+time.sleep(5)
+gruplar.click()
+time.sleep(2)
+gruplar.send_keys("merhaba")
+time.sleep(5)
+paylas = driver.find_element_by_xpath('//button[@data-testid="react-composer-post-button"]')
+time.sleep(5)
+paylas.click()
+time.sleep(10)
+# driver.close()

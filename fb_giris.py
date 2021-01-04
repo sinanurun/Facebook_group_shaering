@@ -1,0 +1,13 @@
+driver = webdriver.Firefox()
+driver.get("http://facebook.com")
+# //*[@id="u_0_2"]
+time.sleep(5)
+giris_yap = driver.find_element_by_xpath('//*[@id="loginbutton"]')
+ad = driver.find_element_by_xpath('//*[@id="email"]')
+ad.send_keys('email')
+# giris_yap.click()
+sifre = driver.find_element_by_xpath('//*[@id="pass"]')
+sifre.send_keys('sifre')
+giris_yap.click()
+time.sleep(5)
+gruplar = driver.find_element_by_xpath("//textarea[contains(@title,'Ne düşünüyorsun, Sinan?')]")
